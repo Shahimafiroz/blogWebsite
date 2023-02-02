@@ -37,7 +37,12 @@
 .pad {
   display: grid;
   justify-content: center;
-  padding-top: 10rem;
+  padding-top: 3rem;
+}
+
+.pad input {
+  height: 60rem;
+  width: 80rem;
 }
 
 .mad {
