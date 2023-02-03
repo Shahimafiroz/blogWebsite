@@ -41,8 +41,14 @@
 }
 
 .pad input {
-  height: 60rem;
-  width: 80rem;
+  height: 5rem;
+  width: 105rem;
+}
+
+.pad button {
+  background-color: #af80cb;
+  height: 5rem;
+  width: 10rem;
 }
 
 .mad {
