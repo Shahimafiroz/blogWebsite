@@ -1,11 +1,11 @@
 <%- include("header") %>
-<div class="pad">
+<div class="form-group pad">
   <h1>Compose</h1>
   <form action="/compose" method="post">
-    <h4>Title</h4>
-    <input type="text" name="inpTitle" />
-    <h4>Post</h4>
-    <textarea name="inp" rows="15" cols="138"></textarea>
+    <label>Title</label>
+    <input class="form-control" type="text" name="inpTitle" />
+    <label>Post</label>
+    <textarea class="form-control" name="inp" rows="15" cols="110"></textarea>
     <button type="submit">Publish</button>
   </form>
 </div>
