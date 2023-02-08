@@ -2,5 +2,17 @@
 <div class="mad">
   <h1>Shahima Firoz Khan</h1>
   <p><%= blog1 %></p>
+
+  <!--  -->
+  <% blogs.forEach(blog =>{ %>
+  <!-- -->
+
+  <h1><%= blog.Title %></h1>
+  <p><%= blog.Content %></p>
+
+  <!--  -->
+  <%})%>
+  <!--  -->
+
+  <%-include("footer")%>
 </div>
-<%- include("footer") %>
