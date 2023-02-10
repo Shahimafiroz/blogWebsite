@@ -3,12 +3,14 @@
   <h1>Shahima Firoz Khan</h1>
   <p><%= blog1 %></p>
 
-  <!--  -->
+  <!--starting the loop for each element of the array  -->
   <% blogs.forEach(blog =>{ %>
-  <!-- -->
-
+  <!-- function to limit the content of each post , using slice methood -->
+  <% const shortContent = (blog.Content).slice(0,600)+"....." %>
+  <!--  -->
   <h1><%= blog.Title %></h1>
-  <p><%= blog.Content %></p>
+  <p><%= shortContent %></p>
+  <a href="/posts/<%=blog.Title%> "> Read More</a>
 
   <!--  -->
   <%})%>

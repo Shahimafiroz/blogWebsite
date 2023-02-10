@@ -53,6 +53,7 @@ head {
 }
 
 .footer p {
+  padding-bottom: 10px;
   margin-top: 25px;
   font-size: 12px;
   color: #fff;
@@ -83,5 +84,5 @@ head {
   justify-content: center;
   margin-right: 25rem;
   margin-left: 25rem;
-  padding-top: 5rem;
+  padding-top: 4rem;
 }

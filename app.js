@@ -55,13 +55,10 @@ app.get("/posts/:postName", function (req, res) {
   //
   postList.forEach((cell) => {
     const arrayTitle = _.lowerCase(cell.Title);
-    const sendTitle = cell.Title;
-    const sendPost = cell.Content;
-    // console.log(arrayTitle);
     if (requestedTitle === arrayTitle) {
       res.render("indi.ejs", {
-        displayTitle: sendTitle,
-        displayPost: sendPost,
+        displayTitle: cell.Title,
+        displayPost: cell.Content,
       });
     } else {
       console.log("ooh nooo !");
