@@ -49,15 +49,20 @@ app.post("/compose", function (req, res) {
 app.get("/posts/:postName", function (req, res) {
   const requestedTitle = _.lowerCase(req.params.postName);
 
-  console.log(requestedTitle);
+  // console.log(requestedTitle);
   //
   //
   //
   postList.forEach((cell) => {
     const arrayTitle = _.lowerCase(cell.Title);
+    const sendTitle = cell.Title;
+    const sendPost = cell.Content;
     // console.log(arrayTitle);
     if (requestedTitle === arrayTitle) {
-      console.log("Match Found!");
+      res.render("indi.ejs", {
+        displayTitle: sendTitle,
+        displayPost: sendPost,
+      });
     } else {
       console.log("ooh nooo !");
     }
